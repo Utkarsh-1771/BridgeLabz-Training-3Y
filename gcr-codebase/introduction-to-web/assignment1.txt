@@ -1,0 +1,61 @@
+1. Explain the difference between frontend, backend, and full-stack development with
+suitable real-world examples.
+
+frontend is the part that the user sees and interacts with, backend is the part that the user cannot usually access, it contains apis, full stack development is someone that can do both these tasks
+
+2. Create a simple diagram showing how the client-server model works in web architecture.
+
+          request
+client------------>server
+       <------------  |
+          response    |  query
+                      |
+                      |
+                    database
+
+3. Describe how a browser requests and displays a web page from a web server.
+
+A browser sends a request to the web server asking for a page, the server processes it and sends back the page's code (HTML, CSS, JS), and the browser reads that code and displays it as the webpage you see.
+
+4. Identify and list the tools required to set up a web development environment. Explain the purpose of each.
+
+A web dev setup usually has a code editor like VS Code to write code, a browser like Chrome to view and test the site, Git to track changes, GitHub to store and share code online, Node.js to run JavaScript and install packages, a terminal to run commands, and a database like MySQL if the site needs to store data.
+
+5. Explain what a web server is and give examples of commonly used servers.
+
+A web server is a computer program that stores website files and sends them to your browser whenever you request a page. Basically, it listens for requests and replies with the right content, like HTML pages or images. Some commonly used web servers are Apache, Nginx
+
+6. Define the roles of a frontend developer, backend developer, and database administrator in a project.
+
+A frontend developer builds what the user sees and interacts with, like the layout, buttons, and design of a website. A backend developer handles the logic behind the scenes, like processing requests, running the server, and connecting to the database. A database administrator manages the actual data making sure it's stored properly, secure, and easy to access whenever the app needs it
+
+7. Install VS Code and configure it for HTML, CSS, and JavaScript development. Take a screenshot of the setup.
+
+Download VS Code from its website and install it.
+Add a few extensions (like Live Server) to make coding easier.
+Make a new folder for your project.
+Create your HTML, CSS, and JS files inside that folder.
+Open your HTML file with Live Server to preview it in the browser.
+Take a screenshot of everything set up and save it.
+
+8. Explain the difference between static and dynamic websites. Provide an example of each.
+
+A static website shows the same content to everyone every time, since the pages are fixed and don't change unless someone manually edits the code. Example: a simple portfolio website with just your resume and contact info.
+A dynamic website changes its content based on the user or situation, usually by pulling data from a database. Example: Instagram, where your feed looks different from everyone else's and updates constantly.
+
+9. Research and list five web browsers. Explain how rendering engines differ between them.
+
+Five common web browsers are Chrome, Firefox, Safari, Edge, and Opera.
+
+Each one uses a different rendering engine the part that turns HTML/CSS code into the page you actually see. Chrome, Edge, and Opera use Blink, so they usually render pages very similarly. Firefox uses its own engine called Gecko, which sometimes handles CSS or JavaScript slightly differently. Safari uses WebKit, which is stricter about certain web standards, so some sites can look or behave a bit differently on it compared to Chrome-based browsers.
+
+10. Draw a labeled diagram showing the basic web architecture flow — client, server, database, and APIs.
+
+CLIENT (Browser) -------> SERVER -------> API -------> DATABASE
+   (User Interface)      (Processes      (Connects     (Stores
+                          Requests)       Logic to      Data) 
+                                          Data)
+
+CLIENT <------- SERVER <------- API <------- DATABASE
+   (Displays        (Sends          (Returns       (Sends back
+    Response)        Response)       Data)          requested data)
