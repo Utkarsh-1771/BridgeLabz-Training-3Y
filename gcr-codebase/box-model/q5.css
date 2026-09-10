@@ -1,0 +1,148 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f1f5f9;
+    color: #1e293b;
+    line-height: 1.6;
+}
+
+.header {
+    padding: 35px 20px;
+    background: #1e293b;
+    color: white;
+    text-align: center;
+}
+
+.header h1 {
+    margin-bottom: 8px;
+}
+
+main {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.selector-section {
+    margin-bottom: 40px;
+    padding: 30px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.selector-section h2 {
+    margin-bottom: 20px;
+    color: #1e3a5f;
+}
+
+
+input[type="text"] {
+    border: 2px solid #3b82f6;
+    background: #eff6ff;
+}
+
+
+a[href^="https"] {
+    color: #15803d;
+    font-weight: bold;
+}
+
+.form-box {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    max-width: 500px;
+}
+
+.form-box label {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.form-box input {
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+.action-link:hover {
+    color: #dc2626;
+    text-decoration: underline;
+}
+
+.focus-input:focus {
+    outline: 3px solid #93c5fd;
+    border-color: #2563eb;
+}
+
+.item-list li:nth-child(2) {
+    background: #dbeafe;
+}
+
+.item-list li::before {
+    content: "✓ ";
+    color: #16a34a;
+    font-weight: bold;
+}
+
+.item-list li::after {
+    content: " •";
+    color: #94a3b8;
+}
+
+.item-list {
+    margin-bottom: 20px;
+    padding-left: 20px;
+}
+
+.item-list li {
+    padding: 8px;
+}
+
+.parent-box p {
+    padding: 10px;
+    background: #f8fafc;
+}
+
+.parent-box>p {
+    border-left: 4px solid #2563eb;
+}
+
+.child-box+p {
+    background: #fef3c7;
+    color: #92400e;
+}
+
+.child-box~p {
+    margin-top: 8px;
+}
+
+
+.child-box p {
+    background: #dcfce7;
+    border-left: 4px solid #16a34a;
+}
+
+.links {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 25px;
+}
+
+.links a {
+    text-decoration: none;
+}
+
+.footer {
+    padding: 20px;
+    background: #1e293b;
+    color: white;
+    text-align: center;
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced CSS Selectors</title>
+    <link rel="stylesheet" href="q5.css">
+</head>
+
+<body>
+    <header class="header">
+        <h1>Advanced CSS Selectors</h1>
+        <p>Explore attribute selectors, pseudo-classes, pseudo-elements and combinators.</p>
+    </header>
+
+    <main>
+        <section class="selector-section">
+            <h2>Attribute Selectors</h2>
+
+            <div class="form-box">
+                <label for="name">Name</label>
+                <input id="name" type="text" placeholder="Enter your name">
+
+                <label for="email">Email</label>
+                <input id="email" type="email" placeholder="Enter your email">
+
+                <label for="search">Search</label>
+                <input id="search" type="text" placeholder="Search here">
+            </div>
+
+            <div class="links">
+                <a href="https://www.google.com">Secure Link</a>
+                <a href="http://example.com">Regular Link</a>
+                <a href="https://www.wikipedia.org">Another Secure Link</a>
+            </div>
+        </section>
+
+        <section class="selector-section">
+            <h2>Pseudo-Classes</h2>
+
+            <ul class="item-list">
+                <li>First Item</li>
+                <li>Second Item</li>
+                <li>Third Item</li>
+                <li>Fourth Item</li>
+            </ul>
+
+            <a class="action-link" href="https://example.com">Hover Over This Link</a>
+
+            <input class="focus-input" type="text" placeholder="Click to focus">
+        </section>
+
+        <section class="selector-section combinator-demo">
+            <h2>Combinators</h2>
+
+            <div class="parent-box">
+                <p>This paragraph is a descendant of the parent box.</p>
+
+                <div class="child-box">
+                    <p>This paragraph is inside the child box.</p>
+                </div>
+
+                <p>This paragraph comes after the child box.</p>
+                <p>This is another paragraph.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>Advanced CSS Selectors Practice</p>
+    </footer>
+</body>
+
+</html>

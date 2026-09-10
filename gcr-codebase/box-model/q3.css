@@ -1,0 +1,91 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: white;
+    background: #111827;
+    padding-top: 80px;
+    padding-bottom: 60px;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #111827;
+    text-align: center;
+    z-index: 10;
+}
+
+.header h1 {
+    font-size: 1.8rem;
+    margin-bottom: 4px;
+}
+
+.header p {
+    font-size: 0.95rem;
+    color: #d1d5db;
+}
+
+.gradient-section {
+    min-height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+.linear-gradient {
+    background: linear-gradient(135deg, #2563eb, #9333ea);
+}
+
+.radial-gradient {
+    background: radial-gradient(circle, #f59e0b, #dc2626, #7f1d1d);
+    background-attachment: fixed;
+}
+
+.content {
+    max-width: 650px;
+    padding: 45px;
+    border-radius: 18px;
+    background: rgba(0, 0, 0, 0.25);
+    text-align: center;
+}
+
+.content h2 {
+    margin-bottom: 15px;
+    font-size: 2rem;
+}
+
+.content p {
+    font-size: 1.05rem;
+    line-height: 1.7;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #111827;
+    color: #d1d5db;
+    text-align: center;
+}

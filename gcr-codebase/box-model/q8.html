@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model Exploration</title>
+    <link rel="stylesheet" href="q8.css">
+</head>
+
+<body>
+    <header class="header">
+        <h1>CSS Box Model Exploration</h1>
+        <p>Understand how content, padding, border, and margin work together.</p>
+    </header>
+
+    <main>
+        <section class="box-model-section">
+            <div class="demo-area">
+                <div class="margin-layer">
+                    <span class="layer-label margin-label">Margin</span>
+
+                    <div class="border-layer">
+                        <span class="layer-label border-label">Border</span>
+
+                        <div class="padding-layer">
+                            <span class="layer-label padding-label">Padding</span>
+
+                            <div class="content-layer">
+                                <h2>Content</h2>
+                                <p>The actual text or elements inside the box.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="description">
+                <div class="description-card">
+                    <h3>Content</h3>
+                    <p>The innermost area where text, images, and other elements are placed.</p>
+                </div>
+
+                <div class="description-card">
+                    <h3>Padding</h3>
+                    <p>The space between the content and the border of an element.</p>
+                </div>
+
+                <div class="description-card">
+                    <h3>Border</h3>
+                    <p>The visible line surrounding the padding and content areas.</p>
+                </div>
+
+                <div class="description-card">
+                    <h3>Margin</h3>
+                    <p>The outer space that separates an element from other elements.</p>
+                </div>
+            </div>
+
+            <section class="sizing-demo">
+                <h2>Box Sizing Comparison</h2>
+
+                <div class="comparison">
+                    <div class="comparison-card">
+                        <h3>Default Box Model</h3>
+                        <div class="default-box">
+                            <span>Width: 250px</span>
+                            <span>Padding: 25px</span>
+                            <span>Border: 5px</span>
+                        </div>
+                        <p>With the default box model, padding and border are added to the declared width.</p>
+                    </div>
+
+                    <div class="comparison-card">
+                        <h3>border-box</h3>
+                        <div class="border-box">
+                            <span>Width: 250px</span>
+                            <span>Padding: 25px</span>
+                            <span>Border: 5px</span>
+                        </div>
+                        <p>With border-box, padding and border are included inside the declared width.</p>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>CSS Box Model Practice</p>
+    </footer>
+</body>
+
+</html>
