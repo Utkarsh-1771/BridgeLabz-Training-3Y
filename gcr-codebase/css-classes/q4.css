@@ -1,0 +1,187 @@
+/* Element selector: styles every h2 element on the page. */
+h2 {
+    margin-bottom: 18px;
+    color: #1e3a8a;
+}
+
+/* Class selector: styles elements with the highlight class. */
+.highlight {
+    padding: 12px;
+    background: #dbeafe;
+    color: #1e40af;
+    border-radius: 6px;
+}
+
+/* ID selector: styles the element with the special-text ID. */
+#special-text {
+    padding: 12px;
+    background: #fef3c7;
+    color: #92400e;
+    border-radius: 6px;
+}
+
+/* Attribute selector: styles elements containing data-type="info". */
+[data-type="info"] {
+    padding: 12px;
+    background: #dcfce7;
+    color: #166534;
+    border-radius: 6px;
+}
+
+/* Universal selector: applies basic sizing and spacing to all elements. */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Body selector: sets the main font, background, and text color. */
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    background: #f1f5f9;
+    color: #1e293b;
+    line-height: 1.6;
+}
+
+/* Header selector: creates the semantic page header styling. */
+.header {
+    padding: 35px 20px;
+    background: #1e293b;
+    color: white;
+    text-align: center;
+}
+
+/* Styles the main heading inside the header. */
+.header h1 {
+    margin-bottom: 8px;
+    font-size: 2rem;
+}
+
+/* Styles the header paragraph. */
+.header p {
+    color: #cbd5e1;
+}
+
+/* Main content selector: controls width and spacing of the page content. */
+.content {
+    flex: 1;
+    width: 100%;
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+/* Styles each section containing selector examples. */
+.selector-section {
+    margin-bottom: 30px;
+    padding: 30px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+/* Adds spacing between paragraphs in the selector section. */
+.selector-section>p {
+    margin-bottom: 15px;
+}
+
+/* Child combinator >: selects only paragraphs that are direct children of .combinator-box. */
+.combinator-box>p {
+    padding: 10px;
+    background: #e0f2fe;
+    border-left: 4px solid #0284c7;
+}
+
+/* Descendant combinator: selects paragraphs anywhere inside .combinator-box. */
+.combinator-box p {
+    margin-bottom: 10px;
+}
+
+/* Styles the nested child container. */
+.inner-box {
+    margin: 15px 0;
+    padding: 15px;
+    background: #f8fafc;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+}
+
+/* Adjacent sibling combinator +: selects the paragraph directly after .inner-box. */
+.inner-box+p {
+    background: #fef3c7;
+    color: #92400e;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+/* General sibling combinator ~: selects all paragraphs after .inner-box. */
+.inner-box~p {
+    margin-top: 10px;
+}
+
+/* Styles the list of technologies. */
+.item-list {
+    margin: 20px 0;
+    padding-left: 25px;
+}
+
+/* Styles each list item. */
+.item-list li {
+    margin-bottom: 8px;
+    padding: 8px;
+}
+
+/* Applies a special style to the second list item. */
+.item-list li:nth-child(2) {
+    background: #ede9fe;
+    color: #6d28d9;
+}
+
+/* Creates spacing between the links. */
+.links {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+/* Styles all links. */
+.links a {
+    padding: 10px 18px;
+    border: 1px solid #93c5fd;
+    border-radius: 7px;
+    background: #eff6ff;
+    color: #1d4ed8;
+    text-decoration: none;
+}
+
+/* Changes link appearance when hovered. */
+.links a:hover {
+    background: #2563eb;
+    color: white;
+}
+
+/* Footer selector: styles the semantic footer. */
+.footer {
+    padding: 20px;
+    background: #1e293b;
+    color: #cbd5e1;
+    text-align: center;
+}
+
+/* Makes the layout responsive on smaller screens. */
+@media (max-width: 700px) {
+    .selector-section {
+        padding: 22px;
+    }
+
+    .links {
+        flex-direction: column;
+    }
+
+    .links a {
+        text-align: center;
+    }
+}

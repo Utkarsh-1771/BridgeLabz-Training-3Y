@@ -1,0 +1,238 @@
+/* Apply consistent box sizing and remove default spacing. */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Set the overall page layout and appearance. */
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    background: #f1f5f9;
+    color: #1e293b;
+}
+
+/* Style the page header. */
+.header {
+    padding: 30px 20px;
+    background: #1e293b;
+    color: white;
+}
+
+/* Align the header content neatly. */
+.header-content {
+    max-width: 1000px;
+    margin: auto;
+    text-align: center;
+}
+
+/* Style the header heading. */
+.header h1 {
+    margin-bottom: 8px;
+    font-size: 2rem;
+}
+
+/* Style the header description. */
+.header p {
+    color: #cbd5e1;
+}
+
+/* Center the main card using Flexbox. */
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+}
+
+/* Create the main UI card. */
+.main-card {
+    width: 100%;
+    max-width: 850px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding: 35px;
+    background: white;
+    border: 1px solid #dbe2ea;
+    border-radius: 16px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the image section. */
+.image-area {
+    flex: 0 0 260px;
+    text-align: center;
+}
+
+/* Style the profile image. */
+.image-area img {
+    width: 180px;
+    height: 180px;
+    margin-bottom: 18px;
+    border: 5px solid #dbeafe;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.12);
+}
+
+/* Style the image section heading. */
+.image-area h2 {
+    margin-bottom: 8px;
+    color: #1e3a5f;
+}
+
+/* Style the image section description. */
+.image-area p {
+    color: #64748b;
+    line-height: 1.5;
+}
+
+/* Arrange form fields vertically. */
+.user-form {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+/* Keep each label and input together. */
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+/* Style form labels. */
+.form-group label {
+    font-weight: 600;
+    color: #334155;
+}
+
+/* Style form controls. */
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px 14px;
+    border: 2px solid #cbd5e1;
+    border-radius: 8px;
+    background: #f8fafc;
+    color: #1e293b;
+    font: inherit;
+    box-shadow: 0 2px 7px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+}
+
+/* Highlight inputs and textarea when focused. */
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #2563eb;
+    outline: 3px solid #bfdbfe;
+    outline-offset: 2px;
+    background: white;
+}
+
+/* Allow the textarea to resize vertically. */
+.form-group textarea {
+    resize: vertical;
+}
+
+/* Arrange buttons side by side. */
+.button-group {
+    display: flex;
+    gap: 12px;
+    margin-top: 5px;
+}
+
+/* Common button styling. */
+.save-btn,
+.cancel-btn {
+    flex: 1;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font: inherit;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Style the save button. */
+.save-btn {
+    border: 2px solid #2563eb;
+    background: #2563eb;
+    color: white;
+    box-shadow: 0 4px 10px rgba(37, 99, 235, 0.2);
+}
+
+/* Add hover and focus effects to the save button. */
+.save-btn:hover {
+    background: #1d4ed8;
+    border-color: #1d4ed8;
+    transform: translateY(-2px);
+    box-shadow: 0 7px 15px rgba(37, 99, 235, 0.3);
+}
+
+.save-btn:focus {
+    outline: 3px solid #93c5fd;
+    outline-offset: 3px;
+}
+
+/* Style the cancel button. */
+.cancel-btn {
+    border: 2px solid #94a3b8;
+    background: white;
+    color: #475569;
+}
+
+/* Add hover and focus effects to the cancel button. */
+.cancel-btn:hover {
+    background: #f1f5f9;
+    border-color: #64748b;
+    transform: translateY(-2px);
+}
+
+.cancel-btn:focus {
+    outline: 3px solid #cbd5e1;
+    outline-offset: 3px;
+}
+
+/* Style the footer. */
+.footer {
+    padding: 20px;
+    background: #1e293b;
+    color: #cbd5e1;
+    text-align: center;
+}
+
+/* Stack the layout on smaller screens. */
+@media (max-width: 750px) {
+    .main-card {
+        flex-direction: column;
+        gap: 30px;
+        max-width: 600px;
+    }
+
+    .image-area {
+        flex: none;
+        width: 100%;
+    }
+
+    .user-form {
+        width: 100%;
+    }
+}
+
+/* Stack buttons on very small screens. */
+@media (max-width: 450px) {
+    .main-card {
+        padding: 25px 20px;
+    }
+
+    .button-group {
+        flex-direction: column;
+    }
+}

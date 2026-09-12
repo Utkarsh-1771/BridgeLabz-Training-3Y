@@ -1,0 +1,192 @@
+/* Apply consistent sizing and remove default spacing. */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Set the main page appearance and layout. */
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    background: #f1f5f9;
+    color: #1e293b;
+}
+
+/* Style the page header. */
+.header {
+    padding: 35px 20px;
+    background: #1e293b;
+    color: white;
+    text-align: center;
+}
+
+/* Style the main heading. */
+.header h1 {
+    margin-bottom: 8px;
+    font-size: 2rem;
+}
+
+/* Style the header description. */
+.header p {
+    color: #cbd5e1;
+}
+
+/* Center the main content vertically and horizontally. */
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+}
+
+/* Style the section containing the buttons. */
+.button-section {
+    width: 100%;
+    max-width: 900px;
+    padding: 40px;
+    background: white;
+    border-radius: 14px;
+    text-align: center;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* Style the section heading. */
+.button-section h2 {
+    margin-bottom: 25px;
+    color: #1e3a5f;
+}
+
+/* Arrange all buttons in a row with equal spacing. */
+.button-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+    flex-wrap: wrap;
+}
+
+/* Common button styling. */
+.btn {
+    min-width: 130px;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Style the primary button. */
+.primary {
+    border: 2px solid #2563eb;
+    background: #2563eb;
+    color: white;
+    box-shadow: 0 4px 10px rgba(37, 99, 235, 0.25);
+}
+
+/* Change the primary button on hover. */
+.primary:hover {
+    background: #1d4ed8;
+    border-color: #1d4ed8;
+    transform: translateY(-2px);
+    box-shadow: 0 7px 15px rgba(37, 99, 235, 0.3);
+}
+
+/* Change the primary button while it is being clicked. */
+.primary:active {
+    transform: translateY(1px);
+    box-shadow: 0 2px 5px rgba(37, 99, 235, 0.25);
+}
+
+/* Style the secondary button. */
+.secondary {
+    border: 2px solid #16a34a;
+    background: #16a34a;
+    color: white;
+    box-shadow: 0 4px 10px rgba(22, 163, 74, 0.2);
+}
+
+/* Change the secondary button on hover. */
+.secondary:hover {
+    background: #15803d;
+    border-color: #15803d;
+    transform: translateY(-2px);
+    box-shadow: 0 7px 15px rgba(22, 163, 74, 0.3);
+}
+
+/* Change the secondary button while it is being clicked. */
+.secondary:active {
+    transform: translateY(1px);
+    box-shadow: 0 2px 5px rgba(22, 163, 74, 0.2);
+}
+
+/* Style the outline button. */
+.outline {
+    border: 2px solid #7c3aed;
+    background: white;
+    color: #7c3aed;
+}
+
+/* Change the outline button on hover. */
+.outline:hover {
+    background: #7c3aed;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 7px 15px rgba(124, 58, 237, 0.25);
+}
+
+/* Change the outline button while it is being clicked. */
+.outline:active {
+    transform: translateY(1px);
+}
+
+/* Show a clear focus state for keyboard and mouse focus. */
+.btn:focus {
+    outline: 3px solid #93c5fd;
+    outline-offset: 4px;
+}
+
+/* Style the disabled button. */
+.btn:disabled {
+    border-color: #cbd5e1;
+    background: #cbd5e1;
+    color: #64748b;
+    cursor: not-allowed;
+    box-shadow: none;
+    transform: none;
+}
+
+/* Add spacing and appearance to the description. */
+.info {
+    margin-top: 25px;
+    color: #64748b;
+    line-height: 1.5;
+}
+
+/* Style the footer. */
+.footer {
+    padding: 20px;
+    background: #1e293b;
+    color: #cbd5e1;
+    text-align: center;
+}
+
+/* Stack buttons neatly on small screens. */
+@media (max-width: 600px) {
+    .button-section {
+        padding: 25px;
+    }
+
+    .button-group {
+        flex-direction: column;
+    }
+
+    .btn {
+        width: 100%;
+        max-width: 300px;
+    }
+}

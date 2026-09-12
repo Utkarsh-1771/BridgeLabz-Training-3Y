@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Sizing Comparison</title>
+    <link rel="stylesheet" href="q8.css">
+</head>
+
+<body>
+    <header class="header">
+        <h1>Box-Sizing Comparison</h1>
+        <p>See the difference between the default box model and border-box.</p>
+    </header>
+
+    <main>
+        <section class="comparison-section">
+            <div class="box-container">
+                <article class="comparison-card">
+                    <h2>Default Box-Sizing</h2>
+                    <div class="default-box">
+                        <span>Width: 300px</span>
+                        <span>Padding: 30px</span>
+                        <span>Border: 5px</span>
+                    </div>
+                    <p>The default content-box model adds padding and border outside the declared width, making the
+                        total size larger than 300px.</p>
+                </article>
+
+                <article class="comparison-card">
+                    <h2>Border-Box</h2>
+                    <div class="border-box">
+                        <span>Width: 300px</span>
+                        <span>Padding: 30px</span>
+                        <span>Border: 5px</span>
+                    </div>
+                    <p>With border-box, the declared width includes both padding and border, so the total width remains
+                        300px.</p>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>CSS Box-Sizing Practice</p>
+    </footer>
+</body>
+
+</html>

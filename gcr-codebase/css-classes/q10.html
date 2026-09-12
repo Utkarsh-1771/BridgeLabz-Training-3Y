@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini User Interface</title>
+    <link rel="stylesheet" href="q10.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-content">
+            <h1>Mini User Interface</h1>
+            <p>A simple and responsive user profile layout.</p>
+        </div>
+    </header>
+
+    <main>
+        <section class="main-card">
+            <div class="image-area">
+                <img src="https://picsum.photos/id/64/300/300" alt="Profile image">
+                <h2>Welcome Back</h2>
+                <p>Update your details using the form.</p>
+            </div>
+
+            <form class="user-form">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" placeholder="Enter your name">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" placeholder="Enter your email">
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" rows="4" placeholder="Write a message"></textarea>
+                </div>
+
+                <div class="button-group">
+                    <button type="submit" class="save-btn">Save Changes</button>
+                    <button type="reset" class="cancel-btn">Cancel</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>Mini UI Layout Practice</p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,204 @@
+/* Apply consistent box sizing and remove default spacing. */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Set the overall page layout and soft background gradient. */
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #e0f2fe, #eef2ff, #f5f3ff);
+    color: #1e293b;
+}
+
+/* Style the page header. */
+.header {
+    padding: 35px 20px;
+    background: rgba(30, 41, 59, 0.95);
+    color: white;
+    text-align: center;
+}
+
+/* Style the main heading. */
+.header h1 {
+    margin-bottom: 8px;
+    font-size: 2rem;
+}
+
+/* Style the header description. */
+.header p {
+    color: #cbd5e1;
+}
+
+/* Center the UI card on the page. */
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+}
+
+/* Create the main card-like container using Flexbox. */
+.ui-card {
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 35px;
+    background: rgba(255, 255, 255, 0.95);
+    border: 1px solid #e2e8f0;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(15, 23, 42, 0.12);
+}
+
+/* Style the card heading. */
+.ui-card h2 {
+    color: #1e3a8a;
+    font-size: 1.7rem;
+}
+
+/* Style the card description. */
+.description {
+    margin-top: -10px;
+    color: #64748b;
+}
+
+/* Arrange the search elements neatly. */
+.search-box,
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+/* Make labels clear and consistent. */
+.search-box label,
+.form-group label {
+    font-weight: 600;
+    color: #334155;
+}
+
+/* Place the search input and button side by side. */
+.search-row {
+    display: flex;
+    gap: 10px;
+}
+
+/* Style the search input and dropdown. */
+.search-row input,
+.form-group select {
+    width: 100%;
+    padding: 12px 14px;
+    border: 2px solid #cbd5e1;
+    border-radius: 8px;
+    background: white;
+    color: #1e293b;
+    font: inherit;
+    box-shadow: 0 2px 8px rgba(15, 23, 42, 0.06);
+    transition: all 0.3s ease;
+}
+
+/* Highlight form controls when focused. */
+.search-row input:focus,
+.form-group select:focus {
+    outline: 3px solid #bfdbfe;
+    outline-offset: 2px;
+    border-color: #2563eb;
+}
+
+/* Style the button group using Flexbox. */
+.button-group {
+    display: flex;
+    gap: 12px;
+}
+
+/* Common button styling. */
+.search-btn,
+.primary-btn,
+.secondary-btn {
+    padding: 12px 22px;
+    border-radius: 8px;
+    font: inherit;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Style the search and primary buttons. */
+.search-btn,
+.primary-btn {
+    border: 2px solid #2563eb;
+    background: #2563eb;
+    color: white;
+    box-shadow: 0 4px 10px rgba(37, 99, 235, 0.2);
+}
+
+/* Change the primary buttons on hover. */
+.search-btn:hover,
+.primary-btn:hover {
+    background: #1d4ed8;
+    border-color: #1d4ed8;
+    transform: translateY(-2px);
+    box-shadow: 0 7px 15px rgba(37, 99, 235, 0.28);
+}
+
+/* Style the secondary button. */
+.secondary-btn {
+    border: 2px solid #94a3b8;
+    background: white;
+    color: #475569;
+    box-shadow: 0 3px 8px rgba(15, 23, 42, 0.08);
+}
+
+/* Change the secondary button on hover. */
+.secondary-btn:hover {
+    background: #f1f5f9;
+    border-color: #64748b;
+    transform: translateY(-2px);
+}
+
+/* Show a clear focus state for all buttons. */
+.search-btn:focus,
+.primary-btn:focus,
+.secondary-btn:focus {
+    outline: 3px solid #93c5fd;
+    outline-offset: 3px;
+}
+
+/* Style the footer. */
+.footer {
+    padding: 20px;
+    background: rgba(30, 41, 59, 0.95);
+    color: #cbd5e1;
+    text-align: center;
+}
+
+/* Make the UI responsive on smaller screens. */
+@media (max-width: 600px) {
+    .ui-card {
+        padding: 25px;
+    }
+
+    .search-row {
+        flex-direction: column;
+    }
+
+    .search-btn {
+        width: 100%;
+    }
+
+    .button-group {
+        flex-direction: column;
+    }
+
+    .primary-btn,
+    .secondary-btn {
+        width: 100%;
+    }
+}

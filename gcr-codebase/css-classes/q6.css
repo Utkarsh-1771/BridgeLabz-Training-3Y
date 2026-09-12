@@ -1,0 +1,184 @@
+/* Apply consistent sizing and remove default spacing. */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Create the main page layout and appearance. */
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    background: #f1f5f9;
+    color: #1e293b;
+}
+
+/* Style the page header. */
+.header {
+    padding: 35px 20px;
+    background: #1e293b;
+    color: white;
+    text-align: center;
+}
+
+/* Style the main heading. */
+.header h1 {
+    margin-bottom: 8px;
+    font-size: 2rem;
+}
+
+/* Style the header description. */
+.header p {
+    color: #cbd5e1;
+}
+
+/* Center all animation examples vertically and horizontally. */
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+}
+
+/* Arrange the animation cards using Flexbox. */
+.animation-section {
+    width: 100%;
+    max-width: 1100px;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+/* Style each animation card. */
+.animation-card {
+    flex: 1;
+    min-width: 250px;
+    max-width: 320px;
+    padding: 30px 20px;
+    background: white;
+    border-radius: 14px;
+    text-align: center;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
+
+/* Style card headings. */
+.animation-card h2 {
+    margin-bottom: 25px;
+    color: #1e3a5f;
+    font-size: 1.4rem;
+}
+
+/* Create the area where the moving box travels. */
+.moving-box {
+    width: 55px;
+    height: 55px;
+    margin: 0 auto 30px;
+    border-radius: 8px;
+    background: #2563eb;
+    animation: moveBox 3s ease-in-out 0.5s infinite alternate;
+}
+
+/* Define the moving box animation. */
+@keyframes moveBox {
+    0% {
+        transform: translateX(-60px);
+    }
+
+    100% {
+        transform: translateX(60px);
+    }
+}
+
+/* Create a fixed area for the bouncing ball. */
+.ball-container {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+/* Style the ball and apply the animation. */
+.ball {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    background: #ef4444;
+    animation: bounceBall 1.5s ease-in-out infinite;
+}
+
+/* Define the bouncing motion. */
+@keyframes bounceBall {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(90px);
+    }
+}
+
+/* Style the animated text. */
+.color-text {
+    min-height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    animation: colorChange 4s ease-in-out 1s 3 alternate;
+}
+
+/* Define the color-changing text animation. */
+@keyframes colorChange {
+    0% {
+        color: #2563eb;
+        transform: scale(1);
+    }
+
+    50% {
+        color: #9333ea;
+        transform: scale(1.15);
+    }
+
+    100% {
+        color: #dc2626;
+        transform: scale(1);
+    }
+}
+
+/* Style the card descriptions. */
+.animation-card p {
+    color: #64748b;
+    line-height: 1.5;
+}
+
+/* Style the footer. */
+.footer {
+    padding: 20px;
+    background: #1e293b;
+    color: #cbd5e1;
+    text-align: center;
+}
+
+/* Adjust the layout for smaller screens. */
+@media (max-width: 700px) {
+    .animation-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .animation-card {
+        width: 100%;
+        max-width: 400px;
+    }
+}
